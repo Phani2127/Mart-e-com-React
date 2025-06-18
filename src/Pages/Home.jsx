@@ -52,7 +52,10 @@ export default function Home() {
       {/* after carousel */}
       <div className="  mx-17 items-center gap-2 flex  p-5 my-5">
         {serviceData.map((item, index) => (
-          <div className="bg-blue-100 text-center p-6 flex flex-col gap-4 w-1/4">
+          <div
+            className="bg-blue-100 text-center p-6 flex flex-col gap-4 w-1/4"
+            style={{ backgroundColor: item.bg }}
+          >
             <span className="mx-auto bg-white  p-2 rounded-full">
               {item.icon}
             </span>
