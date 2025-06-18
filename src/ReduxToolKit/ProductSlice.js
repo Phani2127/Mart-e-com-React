@@ -52,7 +52,21 @@ const products = createSlice({
       );
       saveToLocalStorage(state);
     },
+    removeFromCart: (state, action) => {
+      const id = action.payload.id;
+      state.cart = state.cart.filter((item) => item.id !== id);
+      delete state.productQuantity[id];
 
+      state.total.totalItems = Object.values(state.productQuantity).reduce(
+        (acc, qty) => acc + qty,
+        0
+      );
+      state.total.totalPrice = state.cart.reduce(
+        (acc, item) => acc + item.price * state.productQuantity[item.id],
+        0
+      );
+      saveToLocalStorage(state);
+    },
     increamentQuantity: (state, action) => {
       const id = action.payload;
       if (state.productQuantity[id]) {
