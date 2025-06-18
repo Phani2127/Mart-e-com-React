@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.NoOfItems {
+  position: relative;
+  top: -13px;
+  left: -12px;
+}
