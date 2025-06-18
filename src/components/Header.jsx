@@ -38,9 +38,11 @@ export default function Header() {
               <IoPerson />
             </span>
             <div className="flex">
-              <span className="text-2xl">
-                <IoCartSharp />
-              </span>
+              <Link to="/cart">
+                <span className="text-2xl">
+                  <IoCartSharp />
+                </span>
+              </Link>
               <p className=" text-gray-200  text-sm bg-black rounded-full w-5 ps-1  h-5 NoOfItems">
                 {noOfItems.totalItems}
               </p>
