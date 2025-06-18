@@ -12,7 +12,7 @@ import { discoutProducts } from "../../public/products.jsx";
 import Card from "../components/Card.jsx";
 export default function Home() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 1,
