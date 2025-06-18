@@ -38,7 +38,7 @@ export default function ProductDetails() {
   }
   return (
     <div>
-      <div className="h-50 content-center bg-gray-600 mt-15 productBackground ">
+      <div className="h-50 content-center mt-15 productBackground ">
         <h1 className=" text-center text-3xl font-bold text-gray-300 ">
           {product[0].productName}
         </h1>

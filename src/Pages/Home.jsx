@@ -26,7 +26,7 @@ export default function Home() {
     <div>
       {/* Carousel */}
 
-      <div className="carousel-wrapper my-10 bg-gray-50">
+      <div className="carousel-wrapper  bg-gray-50">
         <Slider {...settings}>
           {SliderData.map((slide, index) => (
             <div className="carousel-slide items-center " key={index}>

@@ -23,7 +23,7 @@ export default function Shop() {
 
   return (
     <div className="mt-10 bg-gray-50">
-      <div className="h-45 content-center bg-gray-600 mt-15 productBackground">
+      <div className="h-45 content-center mt-15 productBackground">
         <h1 className="text-center text-3xl font-bold text-gray-300">
           Product
         </h1>
