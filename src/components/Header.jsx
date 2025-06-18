@@ -14,12 +14,14 @@ export default function Header() {
       style={{ width: "100%" }}
     >
       <div className="mx-17 flex flex-wrap justify-between max-sm:flex max-sm:flex-col">
-        <div className="flex   font-bold items-center text-2xl">
-          <span>
-            <IoBag />
-          </span>
-          <h1>MART</h1>
-        </div>
+        <Link to="/">
+          <div className="flex   font-bold items-center text-2xl">
+            <span>
+              <IoBag />
+            </span>
+            <h1>MART</h1>
+          </div>
+        </Link>
 
         <div className="text-xm font-bold flex flex-wrap  gap-9 items-center max-sm:flex max-sm:flex-col">
           <p className="text-gray-600">Home</p>
