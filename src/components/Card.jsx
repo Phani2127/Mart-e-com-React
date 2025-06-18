@@ -27,7 +27,7 @@ export default function Card({ item }) {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold">${item.price}</h1>
         <h1
-          className="text-3xl p-1"
+          className="text-3xl p-1 hover:text-white hover:bg-blue-900 hover:ease-in-out hover:rounded-full"
           onClick={() => {
             dispatch(addToCart(item));
             toast.success("Your product is added to cart successfully");
