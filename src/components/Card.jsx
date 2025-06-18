@@ -13,6 +13,10 @@ export default function Card({ item }) {
 
   return (
     <div className="relative group flex flex-col gap-3 w-65 p-5 border-gray-200 bg-white shadow-md rounded-xl">
+      <GoHeart
+        className="absolute top-3 right-3  group-hover:text-gray-600 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer z-10"
+        title="Add to Wishlist"
+      />
       <Link to={`/${item.id}`}>
         <img src={item.imgUrl} className="w-100 h-50" alt="" />
       </Link>
