@@ -5,3 +5,12 @@
   top: -13px;
   left: -12px;
 }
+.productBackground {
+  background-image: url("./assets/Images/table.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  justify-content: center;
+  background-color: rgba(22, 21, 21, 0.5);
+  background-blend-mode: darken;
+}
