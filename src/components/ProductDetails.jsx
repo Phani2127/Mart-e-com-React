@@ -115,6 +115,21 @@ export default function ProductDetails() {
       <div className="mx-17 mt-3 h-60">
         {showDesc ? <Description /> : <Reviews />}
       </div>
+      <div className="">
+        <h1 className="text-2xl font-semibold mx-17 my-2">
+          You might also like
+        </h1>
+        <div className="flex mx-40   ms-45 flex-wrap gap-10 my-10 ">
+          {products.map((item, index) =>
+            item.category === product[0].category &&
+            item.id !== product[0].id ? (
+              <Card key={index} item={item} />
+            ) : (
+              " "
+            )
+          )}
+        </div>
+      </div>
     </div>
   );
 }
