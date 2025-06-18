@@ -17,6 +17,13 @@ export default function Card({ item }) {
         className="absolute top-3 right-3  group-hover:text-gray-600 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer z-10"
         title="Add to Wishlist"
       />
+      {item.discount ? (
+        <span className="bg-blue-700 w-17 text-gray-300 py-0.5 px-2 rounded-full text-sm ">
+          {item.discount}% off
+        </span>
+      ) : (
+        ""
+      )}
       <Link to={`/${item.id}`}>
         <img src={item.imgUrl} className="w-100 h-50" alt="" />
       </Link>
