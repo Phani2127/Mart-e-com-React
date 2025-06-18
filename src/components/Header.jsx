@@ -24,12 +24,15 @@ export default function Header() {
         </Link>
 
         <div className="text-xm font-bold flex flex-wrap  gap-9 items-center max-sm:flex max-sm:flex-col">
-          <p className="text-gray-600">Home</p>
-
-          <p className="text-gray-600">Shop</p>
-
-          <p className="text-gray-600">Cart</p>
-
+          <Link to="/">
+            <p className="text-gray-600 hover:text-blue-700">Home</p>
+          </Link>
+          <Link to="/shop">
+            <p className="text-gray-600 hover:text-blue-700">Shop</p>
+          </Link>
+          <Link to="/cart">
+            <p className="text-gray-600 hover:text-blue-700">Cart</p>
+          </Link>
           <div className="flex flex-wrap gap-2 ">
             <span className="text-2xl">
               <IoPerson />
